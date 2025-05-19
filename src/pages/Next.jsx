@@ -23,7 +23,7 @@ const Next = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-indigo-900 to-blue-900 text-white font-sans px-8 py-6">
+    <div className="min-h-screen bg-gradient-to-b from-[#0E0420] to-[#1D143A] text-white font-sans px-8 py-6">
       {/* Header */}
       <div className="flex justify-between items-center mb-6">
         <h1 className="text-3xl font-bold">
@@ -47,7 +47,7 @@ const Next = () => {
             <h2 className="text-teal-400 text-xl font-bold mb-2">{selectedStory.Title} <span className="text-sm text-gray-300">(Noun)</span></h2>
             <p className="text-sm text-gray-200 mb-2">{selectedStory.Description}</p>
             <img src={selectedStory.Image} alt={selectedStory.Title} className="w-full h-40 object-cover rounded mb-2" />
-            {console.log(selectedStory.Questions)}
+            {console.log(selectedStory.Image)}
             <div className="text-sm mt-2">
               <p><strong>Synonyms:</strong> hustle, rise, joy, step forward</p>
               <p><strong>Antonyms:</strong> hustle-free, joy, step forward</p>
@@ -64,7 +64,7 @@ const Next = () => {
               className="bg-white bg-opacity-10 p-2 rounded-lg hover:scale-105 transition cursor-pointer border border-blue-500"
             >
               <img src={story.Image} alt={story.Title} className="w-full h-32 object-cover rounded" />
-              <p className="text-sm mt-2 text-center text-black ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, cum.</p>
+              <p className="text-[13px] mt-2 text-center text-black ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, cum.</p>
             </div>
           ))}
         </div>

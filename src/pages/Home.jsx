@@ -29,8 +29,8 @@ const Home = () => {
   const displayedStories = filteredStories.slice(0, maxStories);
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-indigo-900 to-blue-900 text-white font-sans">
-      <Header />
+    <div className="min-h-screen bg-gradient-to-b from-[#0E0420] to-[#1D143A] text-white font-sans">
+      {/* <Header /> */}
       <Filters filter={filter} setFilter={setFilter} />
       <StoryGrid stories={displayedStories} />
 

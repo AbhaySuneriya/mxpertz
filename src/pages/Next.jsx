@@ -5,6 +5,7 @@ const Next = () => {
   const [stories, setStories] = useState([]);
   const [selectedStory, setSelectedStory] = useState(null);
 
+  
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -56,8 +57,8 @@ const Next = () => {
         )}
 
         {/* Right Grid */}
-        <div className="w-2/3 grid grid-cols-3 gap-4">
-          {stories.slice(0, 12).map((story, i) => (
+        <div className="w-2/3 grid grid-cols-5 gap-4">
+          {stories.slice(0, 10).map((story, i) => (
             <div
               key={i}
               onClick={() => setSelectedStory(story)}

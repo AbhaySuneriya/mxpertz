@@ -57,12 +57,12 @@ const Next = () => {
         )}
 
         {/* Right Grid */}
-        <div className="w-2/3 grid grid-cols-5 gap-4">
+        <div className="w-2/3 grid grid-cols-5 gap-4 bg  ">
           {stories.slice(0, 10).map((story, i) => (
             <div
               key={i}
               onClick={() => setSelectedStory(story)}
-              className="bg-white bg-opacity-10 p-2 rounded-lg hover:scale-105 transition cursor-pointer border border-blue-500"
+              className="bg-gradient-to-r from-[#2B256C] to-[#194B6E] bg-opacity-10 p-2 rounded-lg hover:scale-105 transition cursor-pointer border border-blue-500"
             >
               <img src={story.Image} alt={story.Title} className="w-full h-32 object-cover rounded" />
               <p className="text-[13px] mt-2 text-center text-black ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, cum.</p>
